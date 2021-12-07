@@ -7,9 +7,8 @@ import json#for working with the raw json data from api call
 window = tkinter.Tk()
 window.withdraw()
 # the input dialog
-location = simpledialog.askstring(title="Test",
-                                  prompt="Enter the location:")
-print(location)
+location = simpledialog.askstring(title="Test", prompt="Enter the location:")
+
 if(location == None):
     location = ""
 else:
