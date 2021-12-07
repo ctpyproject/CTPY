@@ -12,7 +12,8 @@ location = simpledialog.askstring(title="Test", prompt="Enter the location:")
 if(location == None):
     location = ""
 else:
-    location = location    
+    pass
+    #location = location    
 
 
 api_key = "5957d1aeff3d4cc185d101803212311"
@@ -22,7 +23,7 @@ raw = requests.get(f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={
 print(raw)
 #converting the raw json response to usable json
 result = json.loads(raw.text)
-print(result)
+#print(result)
 
 #getting image for the weather condition
 
